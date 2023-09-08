@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lunar Eclipse</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+    <script src="../Search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="contianer-fluid">
+    <div class="row1">
+        <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">About Space<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Solar_System.html" class="f">Solar System</a></li>
+                            <li><a href="Earth.html" class="f">Earth</a></li>
+                            <li><a href="Sun.html" class="f">Sun</a></li>
+                            <li><a href="Moon.html" class="f">Moon</a></li>
+                            <li><a href="Planets.html" class="f">Planets</a></li>
+                            <li><a href="Mercury.html" class="f">Mercury</a></li>
+                            <li><a href="Venus.html" class="f">Venus</a></li>
+                            <li><a href="Mars.html" class="f">Mars</a></li>
+                            <li><a href="Jupiter.html" class="f">Jupiter</a></li>
+                            <li><a href="Saturn.html" class="f">Saturn</a></li>
+                            <li><a href="Uranus.html" class="f">Uranus</a></li>
+                            <li><a href="Neptune.html" class="f">Neptune</a></li>
+                            <li><a href="Phases_Moon.html" class="f">Phases of the Moon</a></li>
+                            <li><a href="Eclipse.html" class="f">Eclipse</a></li>
+                            <li><a href="Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                            <li><a href="Lunar_Eclipse.html" class="f" style="background-color: grey;">Lunar Eclipse</a></li>
+                            <li><a href="Satellite.html" class="f">Satellite</a></li>
+                            <li><a href="Stars.html" class="f">Stars</a></li>
+                            <li><a href="Constellation.html" class="f">Constellations</a></li>                            
+                            <li><a href="Black_Hole.html" class="f">Black Hole</a></li>
+                            <li><a href="Galaxy.html" class="f">Galaxy</a></li>
+                            <li><a href="Pluto.html" class="f">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#about">About</a></li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-right">
+                    <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search2()" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="im1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <h1 id="heading">Lunar Eclipse</h1>
+    <p id="infor_par">
+        A lunar eclipse occurs when the Earth comes between the Sun and the Moon in a straight line. 
+        The Earth blocks the sunlight and casts ts shadow on the Moon.
+        This is called <b>Lunar Eclipse</b>.
+        A Lunar Eclipse occurs at day.
+    </p>
+    <img src="https://c.tadst.com/gfx/600x337/total-lunar-eclipse-blood-moon.png?1" width="500px" class="infor_img" alt="Lunar Eclipse">
+
+    <hr>
+    <h2 id="infor_title">Total Lunar Eclipse</h2>
+    <p id="infor_par">
+        When the sunlight is completely blocked by the Earth or 
+        when the Earth casts a umbra on the moon and 
+        the moon is completely hidden by the shadow of the Earth, 
+        it is called a <b>Total Lunar Eclipse</b>
+    </p>
+    <img
+    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExIQFhUVFhUWFRUVFQ8VFRcVFRUWFhUXFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAwQBAgUHBgj/xAA+EAACAgECAgYGBgoBBQAAAAAAAQIDEQQhMVEFBhJBYXEHIoGRocETIzJCsdEzUnKCkrLS4fDxQxQkU2Jz/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EAC8RAQEAAQMDAgQEBgMAAAAAAAABAgMRIQQSMQVBIjJRYRNxodFCgZHB4fAVsfH/2gAMAwEAAhEDEQA/APDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlSe/jx9+fkBgAAAAAAAAAAAAAAAAAAAAAAAAywMAAAAAAAAAAAAAAAZ7L5DdPbfoBDAAAAAAAAAAAAAAAAAAAAAAAAAAAb11N8ERcpPLTDSzz+WLNeh5v3GV1fo68Ohv8VWYaWC7vfuZ3Uyrrx6XSx9k8YLuSXuM7XRjhJ4iaMSlreYt1X4Ir3J7PrGZaOt8YR/D4oTVzniqZdNo5ecYq2dEQf2ZOL5PdGs6nKfNN3Hqem6WXyXb9XP1XRtle7jlc1uv7HRhr4Z+K8/W6LV0ubN59YpmzkAAAAAAAAAAAAAAAAAAAA2jFvgLdk443K7Rdo0i4y38O4wy1Po9LR6OTnPn7LeyMea7/hxZTC05bJkJ3bpFV5InrgUtayJkjPdfZmVeVshLtVbjvETr8C+7K4Lmjm+BjqT3baVvhHruharHt6kn95cH+0i2l1Wen945+p6DS1eZxfrP7x8x0hoJ0y7M15Pufkz09LWw1Zvi+f6jptTQy7c5/P2qqasAAAAAAAAAAAAAAAABvXW5PCItkm9X09PLUy2xdGmlR/M5ss7k9jR0MdOcJCrXfZhRJ3VmO6RIq1k2bELbxtXArathj7rlRlk6ceUrwU5Wu0TUzWccSmUuy2OU32WfVfFGfxTwve2+UldUFusFLllSY4xM5xxxRTbLctx2ZnpYWxcJxTi/f5+DE1MtO92N5Z56WOrj25TePi+nehJ6eWd5Vv7M/lLk/xPa6Xq8dafS/R811nQ5dPd/OP1/dyjrcLAAAAAAAAAAAAAANoRbeERbtythjcrtHV09CivxOXPPur3tDp5pYfdsyq9YwSptukiitbY47t8EL9savBLO7ewFdr7N620Vu1Xxti3XasGNx5bzOWcsSaJitsS1yfeVs+hLfd0KWm+Bz5TZ0yysOsbq3Fc0uxjnyti7H/SRnBxmlKMlhpnJNTLHLfHixplhMsdspvK806ydCy01vZ3cJZcJc1yfij6bpOpmvhv7zy+T63pL0+e38N8OQdTjAAAAAAAAAAAAA6Whowsvi/wObVz3uz2ei6fsx78vNWZSM5HZlk1jEm1THHfykUSu7WYSNkQvNozbHYiVGpjvOESLMYkiiKvEkYlbVu1ukVTsljHYrbyttwnriZ2rSL+nok2mlsc+ecjoxwtXJaXf8cmP4i9wZhWxars6mlm1jkc2UXjfpbouGpqlVLGeMZfqzXBrw5+Bfp9fLQzmc/n945+p0MdbC4Zf+V4/qaJVzlCaxKLcZLk08M+rwymWMynivkM8LhlccvMRFlQAAAAAAAAAAm0tXakl3cWUzy7Y6Ol0fxdST293WZyPfvDRLLLeGUltZbITfImCW7pEirSRskyF5KSraG8RcLCCFVxi1TWu9+4yyyvs3wxnu3tr34FcaZ48tqYDKoxixVEzyq+MdXo+zbsvzRya093Tp32dSmpPicuWVjXZYjp4tbfIp33flFkSutKPAiXeq2LmjinHxRXK7VR8H6T+hezKGpitp4hZ+0l6svak1+6uZ7vpPUb43SvtzHg+rdPtZqz8r/b/fyfBHsvFAAAAAAAAAADqdGV4i3zOXWy3uz2/TdLtwud91hozdmU3uw0FcptGiJZxskFtm0SKvjd6nWe4z4b8+yxCvbczt5bTH4eWnYwW33Z9uyfbbGTPn3X49l6qvK/z4mGWW1bzHeMrSEfiK/hRa0ugyzLPW2Ww0lqWnw9jKZ7zle47XhbqTxjgZZbbp5bU2OLzyIym8VdKmSlvHbP4oxss8nl0tLQUtUvCLrJ0WtRprasbyi+z+0t4/FI36XV/C1cc/u5tfD8XTyw+s/8eAtH2T5C8MAAAAAAAAAMoDu1wxFLkjgt3u76nTw7MJj9IzCItMMed6jmyYz1Lvw1SLMo3SKtI3iiLWmM90/0iM+1t3RZqeUZ5cVvjd40cSd2VnKWmht95XLPhOOnbXX0da7zj1MnZhjsuqtGHdWmy1QlkzyqYsKpMy7rCxbhRnBnckInonuXmozuK3p6kktuG5S3lDqadlGWa5LHxLRhHgPXHRfQ62+CWF23JeU/XWPefX9Hqd+hjft/0+Z63Ds18p/P+rinU5QAAAAAAACTTxzKPmiud2xrXQx7tXGfeO3OWxxScvpc8vhb1LYrl5W058PKKyG5eVhnhtWuCVe1vFFavIkiVrWJIQK2ryLCeFgz88td9ps200XncjO8Iwl35dGMcHNa6vC5p5Z3Mc5svLuuQjwMrV1iMMGW4sxexnfInqkUsQt0rJSq1NXHYKVarRLKrSlsWjHbl4/6WaOzrIy/Xqi/anJfJH0vpWW+jZ9K8H1THbVl+sfFHpvMYAAAAAAAAsaFfWR8/kZ6vyV1dFN9fF1jke9w3qkVyi+GW/BYiYjUnuxgndFxjaKK1aRLFFbV5FiqBnlW2OKb6Mp3L7I84eC3mMrdrsuV5ZjltG03q7pq2uJhnlGuEq/Uc+TRYjPJTbY3WILYyosVx2K1C1pU9yuStWYLYqpas1IlnlVnGxeMfd5Z6Y4/X0f/ADl/N/c+g9I+TL83i+q+cP5vPT13kMAAAAAAAAWNA/rI+Znq/JXT0d218fzddnI973ZiRVsWyRC7L4EHslhBYK2r4ybJ668lLk0xx3XKasmGWWzoxxla2InFTLhrEtVZyu6SPcjDUrXCOjA562bwTK2xC1UvYZZVKfBRC9VHYyt5E+lW5FUqeIUq1XxJjLJZ7kXjJ5R6Yp/9xTHlU3/FN/kfQekz4Mr93i+q34sZ+bz49Z5IAAAAAAABvTLEk+TT+JGU3li+ll25zL6WO/atzz8fD6fPyRQpPKxCG2TO3lrJxu1lAmVFjMRSLlUl4bGOUdOOUTxlyM7Pq0mX0ZUCN0dreNa7iLlTtnsmy1wKcXytd4kq1G/gVywRM1yq3L8DHLHhfu5XoLYwqy1TXleJTKi9XB4wZ2oT1RwiFKnrWESzqastFMlmKLyMa8W9KmqU9fJL/jhCHtx2n/MfS+m4duhL9bXz/qOW+tt9J/l8gd7gYAAAAAAAAyB39PPtQhLww/NbHn5zbKx9NoZ9+lhl9v8ApukQ022WaLMGWU3bYZbHaGyN0kUn3FbwvNql+h70V7l+zbmN4vCK1Mu0SxbK1fes1y33IynCJeVmNy5GVxX743nhrZYZE3iLtWa5NPOeBFm8Ru6dGpzjxOfLTaTN19LHvXec2S269GJRS1NGBKlrZJ5LRW1YriWkZ2rEWkm29ksvyXE0xjHKvzl03rvp9Rbd/wCSyUl5N+qvdg+t0cOzTmP0j5fXz79TLJRNGQAAAAAAAAA6/Qdv2ofvL8GcnU4+Mv5PZ9L1fOnfzn93TnDh4nLK9W4o0WUjdFVt0sJblbOFpeV2N23AxuLomfCNllLw3rZWplT204Sa9pTHLer5Y7RmitsjLKRGM3Tp5M1t2yj4kbqrWjry1ngUzvCcX1GihhI4MvLW+F5IqybwRaRW1J2S0iu6WuJpIztfO+kjpdabRTSeJ3fVQ54f237I59rR39Do9+rPpOXD1mt2advveI8LPo3zrAAAAAAAAAABLprnCSku5/7RXPGZY3GtdHVulnM57Pq2lKMZx+y91+R5Py5XG+X1e8zwmePioXEvuzs5ZjEWkbqJXdLeOUQmWxsiFvKaGxneWk4SqbK7LdyzpW88OJnnstjatLCfdvzMvK1uzeFHa4Y9jI7tldt3W0Whwt8fA589TdeTZ19PHBjeSp4889/AbKWrMCZGdSRReRSrNMDSRllXhvpJ6fWq1bUHmqnNcOTefXl7X8Io+j6LQ/C0+fNeB1ut+JntPE/2vlDscTAAAAAAAAAAAA7fV7pBRf0U/syfqvlLl5M4ur0e6d+PmPY9L6yYX8LPxfH2v+XfnpDz5qPdukhdLRfulZXCxHhllOW8VkrVpy3UCN1tljTQy9848DPO7eGmE3XVpscMPzMPxN/LXs28I6bknw8C+WO8ZzLZapak+GxllO2Lb7rVUUnjG/cUvM3PFdPSLbd/55mOXnhaV0dOZ2ItXKmvzGylqzFZLSM7VhQLyMu58b6TetS01L01cvrrY+s0/wBHW9m/2nul7Wen0PTd+XffEed1vUdmO083/d/2eLHuvDYAAAAAAAAAAAADIH1fV3pdTxXY/W4Rb+8uXmeT1fTXH48PD6T031CakmnqX4vb7/5d/wCj8Dz+57GyrZot9jaavDDLS5QvSsv+JFPw62qq3w8lcsuOE448rtUMbe4xyu7acLllTcNmZTL4l7OFGNBtcmHauaWhruZnnktjHThUm1tv5mG61Xq6/wDXcURVmMQratUMnZS1cpRaRS1xeuPWyGiqf2ZXyX1dfL/3nyividnS9LdbL7e9cXU9Rjo47+/tHhms1c7Zyssk5Tm8yk+LZ9DjjMZ2zw+ezzueVyy8oSyrAAAAAAAAAAAAAAMpgl2fUdB9YVtC54fdZ/V+Z5XU9F/Fp/0/Z7/Q+qS/Brf1/f8Ad9LKntLGeO6f5HmzLavbs3jeqt4Se+O8rlZvvEzfbapVBcMbld6nhvGkjuFmurngpaJ1pU3l4fuI7jZmVK+755Ev1VreivG+WTeVE8bO4bK2p6Xl8GTsra6VFXAbKWvm+t3XmnSqVdLjZfw23hB85vvfgvgd/S9Flqc5cR5/VdZjpTac3/fLx3Wauds5WWScpyeZSfFs93HCYzbHw8LPPLO92V5QllGAAAAAAAAAAAAAAAAGQOn0V05bRsn2ofqSzj2cjm1+k09bzxfq7ul6/V0OJzPpf94fXdHdY6LMJy7EuU9l7JcH8DyNXodXDxN59nvaHqWhq8b7X7/u7MK091jzXyOO2zh3cXlcqwmZ2VbdLKSfBMiRFrBOytqVQT5+4lW1tXW87v2Eq1Zqr8H4BS1B0l09ptKs22xT7oR9ab/dXzN9LptTVvwxz63UaelPirz/AKx+kK+9OulfQ1vZtPNkl4y+77Peevoen4afOXN/R4+v6jlnxhxP1/w+MPQeaAYAAAAAAAAAAAAAAAAAAADIFvRdJ3Vfo7Jx8E9v4XsZamhp6nzTdvpdTq6XyZWO/o+vF0f0ldc/FZg/mvgcOfpenfltn6vR0/WdSfPjL+jq1de6fvU2rycH+ODmvpep7ZR1T1jSvnG/otLrzpOV38Mf6in/ABmt9l/+V0Pv/RrP0gadfZqufn2F82Xnpep72M8vVtL2lc7U+kW3/jprj4ycpfBYN8PS8J82Tmz9Wyvy4/1cPpDrVrLdpXSS/Vh6i+G7OzT6PRw8Y/1cWp12vn/Ft+XDitnS5LdwDAAAAAAAAAAAAAAAAAAAAAAAABkAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" 
+    width="300px" class="infor_img" alt="Total Lunar Eclipse">
+
+    <hr>
+    <h2 id="infor_title">Partial Lunar Eclipse</h2>
+    <p id="infor_par">
+        When the shadow of the Earth partially covers the Moon or
+        when the Earth casts a penumbra on the moon and 
+        some part of the Moon can be seen from the Earth,
+        it is called a <b>Partial Lunar Eclipse</b>
+    </p>
+    <img src="https://cdn.mos.cms.futurecdn.net/DQPz9XN8nG2jpSopxvmj4C.jpg" width="300px" class="infor_img" alt="Partial Lunar Eclipse">
+    <br>
+
+    <hr>
+    <p id="infor_par" style="text-align: center;">
+        <a href="Eclipse.html">Eclipse</a>
+    </p>
+
+    <footer>&copy; 2021</footer>
+    <script src="../banner.js"></script>
+    <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+</div>
+</body>
+</html>

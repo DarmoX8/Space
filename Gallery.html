@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Space Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+  <script src="Search.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .customdiv{
+      background-color: silver;
+      margin:2px;
+      height:250px;
+      text-align: center;
+    }
+
+    #img{ 
+      height:250px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row1">
+    <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary"> <!-- navbar-fixed-top -->
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Gallery.html">Gallery</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Space<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About_Space/Solar_System.html" class="f">Solar System</a></li>
+                        <li><a href="About_Space/Earth.html" class="f">Earth</a></li>
+                        <li><a href="About_Space/Sun.html" class="f">Sun</a></li>
+                        <li><a href="About_Space/Moon.html" class="f">Moon</a></li>
+                        <li><a href="About_Space/Planets.html" class="f">Planets</a></li>
+                        <li><a href="About_Space/Mercury.html" class="f">Mercury</a></li>
+                        <li><a href="About_Space/Venus.html" class="f">Venus</a></li>
+                        <li><a href="About_Space/Mars.html" class="f">Mars</a></li>
+                        <li><a href="About_Space/Jupiter.html" class="f">Jupiter</a></li>
+                        <li><a href="About_Space/Saturn.html" class="f">Saturn</a></li>
+                        <li><a href="About_Space/Uranus.html" class="f">Uranus</a></li>
+                        <li><a href="About_Space/Neptune.html" class="f">Neptune</a></li>
+                        <li><a href="About_Space/Phases_Moon.html" class="f">Phases of the Moon</a></li>
+                        <li><a href="About_Space/Satellite.html" class="f">Satellite</a></li>
+                        <li><a href="About_Space/Eclipse.html" class="f">Eclipse</a></li>
+                        <li><a href="About_Space/Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                        <li><a href="About_Space/Lunar_Eclipse.html" class="f">Lunar Eclipse</a></li>
+                        <li><a href="About_Space/Stars.html" class="f">Stars</a></li>
+                        <li><a href="About_Space/Constellation.html" class="f">Constellations</a></li>
+                        <li><a href="About_Space/Black_Hole.html" class="f">Black Hole</a></li>
+                        <li><a href="About_Space/Galaxy.html" class="f">Galaxy</a></li>
+                        <li><a href="About_Space/Pluto.html" class="f">Pluto</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 navbar-right">
+              <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+              <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search()" type="submit">Search</button>
+            </form>
+        </div>     
+    </nav>
+    <!-- <br><br><br> -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" class="im1" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+        </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- lg - Larger Desktops | md - Desktops | sm - Tablets | xs - Phones -->
+  <!-- No. of columns = number / 12 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 id="heading">Space Gallery</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Solar System -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://www.thenationtoday.com/wp-content/uploads/2021/01/Solar-System.png" class="thumbnail" target="_blank">
+            <p>Solar System</p>
+            <img src="https://www.thenationtoday.com/wp-content/uploads/2021/01/Solar-System.png" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Earth -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://assets.weforum.org/article/image/25NbfYbkiuMvTW3P_YO8QeE-SxtvNKGRX9Dgr6W-gNE.jpg" class="thumbnail" target="_blank">
+            <p>Earth</p>
+            <img src="https://assets.weforum.org/article/image/25NbfYbkiuMvTW3P_YO8QeE-SxtvNKGRX9Dgr6W-gNE.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Sun -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://media.nationalgeographic.org/assets/photos/000/290/29094.jpg" class="thumbnail" target="_blank">
+            <p>Sun</p>
+            <img src="https://media.nationalgeographic.org/assets/photos/000/290/29094.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Moon -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+        <div class="customdiv">
+          <a href="https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg" class="thumbnail" target="_blank">
+            <p>Moon</p>
+            <img src="https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Mercury -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mercury-planet-1551956164.jpg?crop=0.601xw:1.00xh;0.190xw,0&resize=640:*" class="thumbnail" target="_blank">
+            <p>Mercury</p>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mercury-planet-1551956164.jpg?crop=0.601xw:1.00xh;0.190xw,0&resize=640:*" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Venus -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://cdn.britannica.com/09/78009-050-49FFFBA9/ultraviolet-light-Venus-spacecraft-Pioneer-Orbiter-bands-Feb-26-1979.jpg" class="thumbnail" target="_blank">
+            <p>Venus</p>
+            <img src="https://cdn.britannica.com/09/78009-050-49FFFBA9/ultraviolet-light-Venus-spacecraft-Pioneer-Orbiter-bands-Feb-26-1979.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Mars -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://static.scientificamerican.com/sciam/cache/file/C454F5A6-536E-4C9F-AA6AF354BB85A85B.jpg" class="thumbnail" target="_blank">
+            <p>Mars</p>
+            <img src="https://static.scientificamerican.com/sciam/cache/file/C454F5A6-536E-4C9F-AA6AF354BB85A85B.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Jupiter -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+        <div class="customdiv">
+          <a href="http://planetary-science.org/wp-content/uploads/2013/06/Jupiter.jpg" class="thumbnail" target="_blank">
+            <p>Jupiter</p>
+            <img src="http://planetary-science.org/wp-content/uploads/2013/06/Jupiter.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Saturn -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://www.nasa.gov/sites/default/files/thumbnails/image/edu_ring_a-round_the_saturn.jpg" class="thumbnail" target="_blank">
+            <p>Saturn</p>
+            <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/edu_ring_a-round_the_saturn.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Uranus -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://ychef.files.bbci.co.uk/976x549/p0257vk5.jpg" class="thumbnail" target="_blank">
+            <p>Uranus</p>
+            <img src="https://ychef.files.bbci.co.uk/976x549/p0257vk5.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Neptune -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="data:image/jpeg;base64,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" class="thumbnail" target="_blank">
+            <p>Neptune</p>
+            <img src="data:image/jpeg;base64,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" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Phases of the Moon -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://www.schoolsobservatory.org/sites/default/files/astro/lunarcycle.jpg" class="thumbnail" target="_blank">
+            <p>Phases of the Moon</p>
+            <img src="https://www.schoolsobservatory.org/sites/default/files/astro/lunarcycle.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Satellite -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+        <div class="customdiv">
+          <a href="https://media.wired.com/photos/5b52582f59269e342890a45a/1:1/w_1800,h_1800,c_limit/Satellite_FHM56J.jpg" class="thumbnail" target="_blank">
+            <p>Satellite</p>
+            <img src="https://media.wired.com/photos/5b52582f59269e342890a45a/1:1/w_1800,h_1800,c_limit/Satellite_FHM56J.jpg"/>
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+      
+      <!-- Solar Eclipse -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://static.india.com/wp-content/uploads/2020/06/solar-eclipse-partial-ring-of-fire.jpg" class="thumbnail" target="_blank">
+            <p>Solar Eclipse</p>
+            <img src="https://static.india.com/wp-content/uploads/2020/06/solar-eclipse-partial-ring-of-fire.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Lunar Eclipse -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://www.thoughtco.com/thmb/fNeHO8LqN7tNFj81gmAmB2LqVag=/3744x3744/smart/filters:no_upscale()/blood-moon-total-lunar-eclipse-april-14-15-2014-487245745-58dfe7865f9b58ef7ed85623.jpg" class="thumbnail" target="_blank">
+            <p>Lunar Eclipse</p>
+            <img src="https://www.thoughtco.com/thmb/fNeHO8LqN7tNFj81gmAmB2LqVag=/3744x3744/smart/filters:no_upscale()/blood-moon-total-lunar-eclipse-april-14-15-2014-487245745-58dfe7865f9b58ef7ed85623.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Star -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://www.universetoday.com/wp-content/uploads/2017/08/eso1726b-700x432.jpg" class="thumbnail" target="_blank">
+            <p>Star</p>
+            <img src="https://www.universetoday.com/wp-content/uploads/2017/08/eso1726b-700x432.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Black Hole -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://images.immediate.co.uk/production/volatile/sites/4/2018/08/GettyImages-476758516use-34c1d9f.jpg?quality=90&resize=768,574" class="thumbnail" target="_blank">
+            <p>Black Hole</p>
+            <img src="https://images.immediate.co.uk/production/volatile/sites/4/2018/08/GettyImages-476758516use-34c1d9f.jpg?quality=90&resize=768,574" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Galaxy -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://i.natgeofe.com/n/e484088d-3334-4ab6-9b75-623f7b8505c9/1086.jpg" class="thumbnail" target="_blank">
+            <p>Galaxy</p>
+            <img src="https://i.natgeofe.com/n/e484088d-3334-4ab6-9b75-623f7b8505c9/1086.jpg" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- Pluto -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="customdiv">
+          <a href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pluto-natural-color-20150714-1580931706.png" class="thumbnail" target="_blank">
+            <p>Pluto</p>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pluto-natural-color-20150714-1580931706.png" id="img">
+          </a>
+        </div>
+        <br><br><br>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        </div><script src="banner.js"></script>
+        <footer>&copy; 2021</footer>
+        <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

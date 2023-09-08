@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phases of the Moon</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+    <script src="../Search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div class="contianer-fluid">
+    <div class="row1">
+        <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">About Space<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Solar_System.html" class="f">Solar System</a></li>
+                            <li><a href="Earth.html" class="f">Earth</a></li>
+                            <li><a href="Sun.html" class="f">Sun</a></li>
+                            <li><a href="Moon.html" class="f">Moon</a></li>
+                            <li><a href="Planets.html" class="f">Planets</a></li>
+                            <li><a href="Mercury.html" class="f">Mercury</a></li>
+                            <li><a href="Venus.html" class="f">Venus</a></li>
+                            <li><a href="Mars.html" class="f">Mars</a></li>
+                            <li><a href="Jupiter.html" class="f">Jupiter</a></li>
+                            <li><a href="Saturn.html" class="f">Saturn</a></li>
+                            <li><a href="Uranus.html" class="f">Uranus</a></li>
+                            <li><a href="Neptune.html" class="f">Neptune</a></li>
+                            <li><a href="Phases_Moon.html" class="f" style="background-color: grey;">Phases of the Moon</a></li>
+                            <li><a href="Eclipse.html" class="f">Eclipse</a></li>
+                            <li><a href="Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                            <li><a href="Lunar_Eclipse.html" class="f">Lunar Eclipse</a></li>
+                            <li><a href="Satellite.html" class="f">Satellite</a></li>
+                            <li><a href="Stars.html" class="f">Stars</a></li>
+                            <li><a href="Constellation.html" class="f">Constellations</a></li>
+                            <li><a href="Black_Hole.html" class="f">Black Hole</a></li>
+                            <li><a href="Galaxy.html" class="f">Galaxy</a></li>
+                            <li><a href="Pluto.html" class="f">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#about">About</a></li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-right">
+                    <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search2()" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="im1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <h1 id="heading">Phases of the Moon</h1>
+    <table class="center">
+        <tr>
+            <td><img src="https://www.schoolsobservatory.org/sites/default/files/astro/lunarcycle.jpg" width="400px" class="infor_img" alt="Phases of the Moon"></td>
+            <td>&nbsp;</td>
+            <td><img src="https://c.tenor.com/4GXNb-8ZtA4AAAAC/moon-phases-moon.gif" width="400px" class="infor_img" alt="Phases of the Moon"></td>
+        </tr>
+    </table>
+
+    <p id="infor_par">
+        The time period of revolution and rotation of the Moon are almost the same as the Earth. 
+        Thus, the same side of the Moon is always facing the Earth. 
+        The part of the Moon that faces the sun is lit up by the Sun. 
+        Different portions of the Moon are illuminated by the Sun at different times during its rotation.
+        These illuminated portions appear to change shape when viewed from the Earth.
+        These changing shapes of the Moon are known as the <b>Phases of the Moon</b>.
+        When the moon is growing, it is called <b>Waxing</b>.
+        When the moon is shrinking, it is called <b>Waning</b>.
+    </p>
+
+    <hr>
+    <h2 id="infor_title">New Moon</h2>
+    <p id="infor_par">
+        In this phase, the illuminated side of the Moon is away from the Earth.
+        The side of the Moon facing the Earth receives no sunlight and hence, cannot be seen from the Earth. 
+        This phase is called the <b>New Moon</b>.
+    </p>
+    <img src="https://www.astro-seek.com/seek-images/fb/seek_fb_moon_new_1200.jpg" width="300px" class="infor_img" alt="New Moon">
+
+    <hr>
+    <h2 id="infor_title">Crescent Moon</h2>
+    <p id="infor_par">
+        In this phase, a small portion of the illuminated side of the Moon is facing towards the Earth. 
+        So, a small portion of the moon can be seen from the Earth. 
+        It is called the <b>Crescent Moon</b>.
+        <b>Waxing Crescent</b> when it's growing. 
+        <b>Waning Crescent</b> when it's shrinking.
+    </p>
+    <img src="https://c.tadst.com/gfx/600x337/waxing-crescent-moon.jpg?1" width="300px" class="infor_img" alt="Crescent Moon">
+
+    <hr>
+    <h2 id="infor_title">Half Moon</h2>
+    <p id="infor_par">
+        When half portion of the illuminated side of the Moon is facing towards the Earth, 
+        we can see a half of the Moon from the Earth. 
+        It is called <b>Half Moon</b>. 
+        <b>First Quarter</b> when it's growing.
+        <b>Third Quarter</b> when it's shrinking.
+    </p>
+    <img src="https://earthsky.org/upl/2016/11/moon-just-past-1stququarter-Steve-Pauken-Bisbee-AZ-e1598307678184.jpg" width="300px" class="infor_img" alt="Half Moon">
+
+    <hr>
+    <h2 id="infor_title">Gibbous Moon</h2>
+    <p id="infor_par">
+        When a large portion of the illuminated side of the Moon is facing towards the Earth,
+        we can see a large portion of the Moon from the Earth.
+        It is called the Gibbous Moon.
+        <b>Waxing Gibbous</b> when it's growing. 
+        <b>Waning Gibbous</b> when it's shrinking.
+    </p>
+    <img src="https://starlust.org/wp-content/uploads/2020/12/waxing-gibbous-moon.jpg" width="300px" class="infor_img" alt="Gibbous Moon">
+
+    <hr>
+    <h2 id="infor_title">Full Moon</h2>
+    <p id="infor_par">
+        When the entire portion of the illuminated side of the Moon faces towards the Earth, 
+        we can see the perfectly round Moon. 
+        It is called the <b>Full Moon</b>.
+    </p>
+    <img src="https://www.refinery29.com/images/10640480.jpg" width="300px" class="infor_img" alt="Full Moon">
+
+    <p id="infor_par">
+        The phases of the Moon reverse after the Full Moon. 
+        The time period between two full moons is about 29.5 days.
+    </p>
+
+    <hr>
+    <p id="infor_par" style="text-align: center;">
+        <a href="Moon.html">Moon</a>
+    </p>
+
+    <footer>&copy; 2021</footer>
+    <script src="../banner.js"></script>
+    <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+</div>
+</body>
+</html>

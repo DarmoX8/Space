@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Planets</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+    <script src="../Search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="contianer-fluid">
+    <div class="row1">
+        <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">About Space<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Solar_System.html" class="f">Solar System</a></li>
+                            <li><a href="Earth.html" class="f">Earth</a></li>
+                            <li><a href="Sun.html" class="f">Sun</a></li>
+                            <li><a href="Moon.html" class="f">Moon</a></li>
+                            <li><a href="Planets.html" class="f" style="background-color: grey;">Planets</a></li>
+                            <li><a href="Mercury.html" class="f">Mercury</a></li>
+                            <li><a href="Venus.html" class="f">Venus</a></li>
+                            <li><a href="Mars.html" class="f">Mars</a></li>
+                            <li><a href="Jupiter.html" class="f">Jupiter</a></li>
+                            <li><a href="Saturn.html" class="f">Saturn</a></li>
+                            <li><a href="Uranus.html" class="f">Uranus</a></li>
+                            <li><a href="Neptune.html" class="f">Neptune</a></li>
+                            <li><a href="Phases_Moon.html" class="f">Phases of the Moon</a></li>
+                            <li><a href="Eclipse.html" class="f">Eclipse</a></li>
+                            <li><a href="Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                            <li><a href="Lunar_Eclipse.html" class="f">Lunar Eclipse</a></li>
+                            <li><a href="Satellite.html" class="f">Satellite</a></li>
+                            <li><a href="Stars.html" class="f">Stars</a></li>
+                            <li><a href="Constellation.html" class="f">Constellations</a></li>
+                            <li><a href="Black_Hole.html" class="f">Black Hole</a></li>
+                            <li><a href="Galaxy.html" class="f">Galaxy</a></li>
+                            <li><a href="Pluto.html" class="f">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#about">About</a></li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-right">
+                    <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search2()" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="im1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <h1 id="heading">Planets</h1>
+    <img src="https://image.shutterstock.com/image-vector/vector-set-icons-planet-solar-260nw-1711897591.jpg" height="300px" width="900px" class="infor_img" alt="Planets">
+
+    <p id="infor_par">
+        All the planets, except the Earth, have been named after Roman and Greek Gods.
+        A planet needs to fulfill 3 essential criteria.
+    </p>
+    <ol id="infor_par">
+        <li>The object should be a heavenly body revolving around the sun.</li>
+        <li>The object should be spherical in shape.</li>
+        <li>
+            The area around it's orbit should be clear and should not have any equivalent or a bigger celestial body.
+            <br>
+            With the help of its gravity the planet should clear asteroids and other planets out of its way.
+        </li>
+    </ol>
+    <p id="infor_par">
+        Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune fulfill these conditions and 
+        thus they are <b>planets</b>. 
+        <br>
+        Pluto, Haumea, Make Make, Eris does not fulfill the 3rd criteria but does fulfill the 1st and 2nd criteria.
+        Thus, called <b>dwarf planets</b>.
+    </p>
+
+    <h2 id="infor_title">Summery of Planets</h2>
+    <table border="3px" style="border: 3px solid #ffffff; background-color: #fdc780;font-size: 20px; color: black;" width="100%">
+        <tr>
+            <th style="text-align: center; width: 11.2%">Planets</th>
+            <th style="text-align: center; width: 11%;">Mercury</th>
+            <th style="text-align: center; width: 11%;">Venus</th>
+            <th style="text-align: center; width: 11%;">Earth</th>
+            <th style="text-align: center; width: 11%;">Mars</th>
+            <th style="text-align: center; width: 11%;">Jupiter</th>
+            <th style="text-align: center; width: 11%;">Saturn</th>
+            <th style="text-align: center; width: 11%;">Uranus</th>
+            <th style="text-align: center; width: 11%;">Neptune</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Other Names:</th>
+            <td>Budh</td>
+            <td>Shukra</td>
+            <td>Prithvi</td>
+            <td>Mangal</td>
+            <td>Brahaspati</td>
+            <td>Shani</td>
+            <td>Arun</td>
+            <td>Varun</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Specialties:</th>
+            <td>1st Planet in the Solar System. Fastest planet revolving around the Sun.</td>
+            <td>Hottest Planet in the Solar System.</td>
+            <td>Only planet where life exists. Also known as Blue Planet because 70.8% of Earth is covered in water.</td>
+            <td>Mars is called the Red Planet because of rusty iron in the ground.</td>
+            <td>The Biggest Planet in the Solar System, has the highest amount of gravity and the fastest rotating planet.</td>
+            <td>2nd Largest planet in our solar system. It have thousands of beautiful ringlets.</td>
+            <td>Coldest Planet in the Solar System. The only planet rotating on it's side.</td>
+            <td>The Last Planet in the Solar System.</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Complete Rotation</th>
+            <td>56.85 days</td>
+            <td>116 days 18 hours</td>
+            <td>1 day</td>
+            <td>1 day 37 minutes</td>
+            <td>9 hours 56 minutes</td>
+            <td>10 hours 42 minutes</td>
+            <td>17 hours 14 minutes</td>
+            <td>16 hours 6 minutes</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Complete Revolution:</th>
+            <td>88 days</td>
+            <td>225 days</td>
+            <td>1 year 1/4 day</td>
+            <td>1 year 322 days</td>
+            <td>12 years</td>
+            <td>29 years</td>
+            <td>84 years</td>
+            <td>165 years</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Moons:</th>
+            <td>No Moons</td>
+            <td>No Moons</td>
+            <td>1 Moon</td>
+            <td>2 Moons</td>
+            <td>79 Moons</td>
+            <td>82 Moons</td>
+            <td>27 Moons</td>
+            <td>14 Moons</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Axis tilt:</th>
+            <td>2°</td>
+            <td>3°</td>
+            <td>23.5°</td>
+            <td>25°</td>
+            <td>3.13°</td>
+            <td>26.73°</td>
+            <td>97.77°</td>
+            <td>28.32°</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Temperature:</th>
+            <td>354°F (178.889°C)</td>
+            <td>880°F (471°C)</td>
+            <td>61°F (16°C)</td>
+            <td>-80°F (-62.2222°C)</td>
+            <td>-238°F (-150°C)</td>
+            <td>-285°F (-176.111°C)</td>
+            <td>-353°F (213.889°C)</td>
+            <td>-331°F (-201°C)</td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">Gravity:</th>
+            <td>37.8/100 of Earth</td>
+            <td>90.7/100 of Earth</td>
+            <td>9.807 m/s<sup>2</sup></td>
+            <td>37.7/100 of Earth</td>
+            <td>236.4/100 of Earth</td>
+            <td>106.4/100 of Earth</td>
+            <td>88.9/100 of Earth</td>
+            <td>112.5/100 of Earth</td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <p id="infor_par" style="text-align: center;">
+        <a href="Solar_System.html">Solar System</a> |
+        <a href="Mercury.html">Mercury</a> |
+        <a href="Venus.html">Venus</a> |
+        <a href="Earth.html">Earth</a> |
+        <a href="Mars.html">Mars</a> |
+        <a href="Jupiter.html">Jupiter</a> |
+        <a href="Saturn.html">Saturn</a> |
+        <a href="Uranus.html">Uranus</a> |
+        <a href="Neptune.html">Neptune</a> |
+        <a href="Pluto.html">Pluto</a>
+    </p>
+
+    <footer>&copy; 2021</footer>
+    <script src="../banner.js"></script>
+    <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+</div>
+</body>
+</html>

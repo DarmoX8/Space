@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moon</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+    <script src="../Search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="contianer-fluid">
+    <div class="row1">
+        <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">About Space<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Solar_System.html" class="f">Solar System</a></li>
+                            <li><a href="Earth.html" class="f">Earth</a></li>
+                            <li><a href="Sun.html" class="f">Sun</a></li>
+                            <li><a href="Moon.html" class="f" style="background-color: grey;">Moon</a></li>
+                            <li><a href="Planets.html" class="f">Planets</a></li>
+                            <li><a href="Mercury.html" class="f">Mercury</a></li>
+                            <li><a href="Venus.html" class="f">Venus</a></li>
+                            <li><a href="Mars.html" class="f">Mars</a></li>
+                            <li><a href="Jupiter.html" class="f">Jupiter</a></li>
+                            <li><a href="Saturn.html" class="f">Saturn</a></li>
+                            <li><a href="Uranus.html" class="f">Uranus</a></li>
+                            <li><a href="Neptune.html" class="f">Neptune</a></li>
+                            <li><a href="Phases_Moon.html" class="f">Phases of the Moon</a></li>
+                            <li><a href="Eclipse.html" class="f">Eclipse</a></li>
+                            <li><a href="Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                            <li><a href="Lunar_Eclipse.html" class="f">Lunar Eclipse</a></li>
+                            <li><a href="Satellite.html" class="f">Satellite</a></li>
+                            <li><a href="Stars.html" class="f">Stars</a></li>
+                            <li><a href="Constellation.html" class="f">Constellations</a></li>                            
+                            <li><a href="Black_Hole.html" class="f">Black Hole</a></li>
+                            <li><a href="Galaxy.html" class="f">Galaxy</a></li>
+                            <li><a href="Pluto.html" class="f">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#about">About</a></li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-right">
+                    <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search2()" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="im1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <h1 id="heading">Moon</h1>
+    <img src="https://c.tenor.com/v9XIZ3ZgKvEAAAAM/moon-earths-moon.gif" width="400px" class="infor_img" alt="Moon">
+
+    <div class="infor_div" style="border: 5px solid #313131; background-color: #cecece; color: black;">
+        <table border="3px">
+            <tr>
+                <th colspan="2" style="text-align: center;" style="color: black;">Moon</th>
+            </tr>
+            <tr>
+                <td colspan="2" id="infor_par" style="color: black;">
+                    We can see the moon shining in the sky at night.  
+                    The Moon also spins or rotates on its own axis. 
+                    The moon completes one revolution in about the same time that it takes to complete a rotation about its axis.
+                    The light from the moon is thrown back to the Earth as moonlight.
+                    Moonlight takes nearly one light second to travel from the Moon to the Earth.
+                </td>
+            </tr>
+            <tr>
+                <td>About</td>
+                <td id="infor_par" style="color: black;">
+                    The Moon is a heavenly body that orbits around the earth. 
+                    Therefore, it is known as a natural satellite of the earth. 
+                    It is the closest neighbour of earth in space. 
+                    It appears as a dry, grey-coloured ball of rock. 
+                    The size of the Moon is much smaller than that of the sun. 
+                    However, it appears of the same size of the Sun because it is much closer to Earth than the Sun. 
+                    Just like the Earth, Moon is also made up of three layers — core, crust and mantle. 
+                    It does not have its own light. 
+                    It shines because it reflects the sunlight that falls on its surface. 
+                    It is the second brightest object in the sky after the Sun.
+                    All the planets except Mercury and Venus in our solar system have moons.
+                </td>
+            </tr>
+            <tr>
+                <td>Timeline</td>
+                <td id="infor_par" style="color: black;">
+                    4.5 billion years ago, A giant object collided with the Earth. 
+                    After the collision, the debris formed the Moon.
+                    <br>
+                    5th century BCE, Babylonian Astronomers were the first to study and mapped the first lunar cycle.
+                    <br>
+                    In 1647, The First map was made to show liberation zones of the moon.
+                    <br>
+                    In 1959, The Soviet Union's 'Luna Program' was the first to get a man-made object to escape Earth's gravity. 
+                    It impacted the surface of the Moon.
+                </td>
+            </tr>
+            <tr>
+                <td>Surface</td>
+                <td id="infor_par" style="color: black;">
+                    The surface of the Moon is made of rocks and dust. 
+                    It has high mountains, volcanoes and impact craters. 
+                    The craters have been created on the surface of the Moon due to the impact of colliding meteorites.
+                </td>
+            </tr>
+            <tr>
+                <td>Conditions</td>
+                <td id="infor_par" style="color: black;">
+                    There is no air and water on the Moon.
+                    So, no life exists there. 
+                    However, a thin layer of gases is present on the Moon.
+                    No air means there is no atmosphere on the Moon. 
+                    In the absence of atmosphere, the surface of the Moon becomes very hot during the day and very cold at night. 
+                    The absence of atmosphere also means that there is no protection from the approaching meteorites. 
+                    This is the reason why there are so many craters on the Moon.
+                    The lack of air also means that two people talking on the Moon cannot hear each other. 
+                    The reason being that sound waves need a medium to travel.
+                    That is why the spacesuits of astronauts are fitted with radio sets. 
+                    When an astronaut speaks, his radio set converts sound waves into radio waves.
+                    Radio waves can travel without a medium. 
+                    After receiving a radio message, the radio set converts radio waves into sound waves. 
+                    In this way, the astronauts are able to communicate with each other.
+                </td>
+            </tr>
+            <tr>
+                <td>Rotation:</td>
+                <td>A speed of 16.7 km/h (10.3 mph) and 27.32 days for a complete rotation.</td>
+            </tr>
+            <tr>
+                <td>Revolution:</td>
+                <td>A speed of 3,683 km/h (2,288 mph), and 27 days for a complete revolution.</td>
+            </tr>
+            <tr>
+                <td>Axis Tilt:</td>
+                <td>1.5°</td>
+            </tr>
+            <tr>
+                <td>Temperature:</td>
+                <td>212°F at day and -279.4°F at night (100°C at day and -173°C at night)</td>
+            </tr>
+            <tr>
+                <td>Gravity:</td>
+                <td>1.62 m/s<sup>2</sup> or 1/6 of Earth</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>4.53 billion years</td>
+            </tr>
+            <tr>
+                <td>Distance from the Sun:</td>
+                <td>Average of 149.6 million km</td>
+            </tr>
+            <tr>
+                <td>Radius:</td>
+                <td>1,737.4 km</td>
+            </tr>
+            <tr>
+                <td>Diameter:</td>
+                <td>3,474.8 km</td>
+            </tr>
+            <tr>
+                <td>Mass:</td>
+                <td>7.34767309 x 1022 kg or 1/4 of Earth</td>
+            </tr>
+            <tr>
+                <td>Surface Area:</td>
+                <td>14.6 million miles<sup>2</sup> (38 million km<sup>2</sup>)</td>
+            </tr>
+            <tr>
+                <td>Distance from the Earth</td>
+                <td>3,84,400 km</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+    <p id="infor_par" style="text-align: center;">
+        <a href="Solar_System.html">Solar System</a> |
+        <a href="Phases_Moon.html">Phases of the Moon</a> |
+        <a href="Eclipse.html">Eclipse</a> |
+        <a href="Satellite.html">Satellite</a>
+    </p>
+
+    <footer>&copy; 2021</footer>
+    <script src="../banner.js"></script>
+    <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+</div>
+</body>
+</html>

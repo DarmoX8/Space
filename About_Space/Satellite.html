@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Satellite</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/space-logo-png-transparent.png" type="image/x-icon">
+    <script src="../Search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="contianer-fluid">
+    <div class="row1">
+        <nav class="navbar navbar-inverse  navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">About Space<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Solar_System.html" class="f">Solar System</a></li>
+                            <li><a href="Earth.html" class="f">Earth</a></li>
+                            <li><a href="Sun.html" class="f">Sun</a></li>
+                            <li><a href="Moon.html" class="f">Moon</a></li>
+                            <li><a href="Planets.html" class="f">Planets</a></li>
+                            <li><a href="Mercury.html" class="f">Mercury</a></li>
+                            <li><a href="Venus.html" class="f">Venus</a></li>
+                            <li><a href="Mars.html" class="f">Mars</a></li>
+                            <li><a href="Jupiter.html" class="f">Jupiter</a></li>
+                            <li><a href="Saturn.html" class="f">Saturn</a></li>
+                            <li><a href="Uranus.html" class="f">Uranus</a></li>
+                            <li><a href="Neptune.html" class="f">Neptune</a></li>
+                            <li><a href="Phases_Moon.html" class="f">Phases of the Moon</a></li>
+                            <li><a href="Eclipse.html" class="f">Eclipse</a></li>
+                            <li><a href="Solar_Eclipse.html" class="f">Solar Eclipse</a></li>
+                            <li><a href="Lunar_Eclipse.html" class="f">Lunar Eclipse</a></li>
+                            <li><a href="Satellite.html" class="f" style="background-color: grey;">Satellite</a></li>
+                            <li><a href="Stars.html" class="f">Stars</a></li>
+                            <li><a href="Constellation.html" class="f">Constellations</a></li>
+                            <li><a href="Black_Hole.html" class="f">Black Hole</a></li>
+                            <li><a href="Galaxy.html" class="f">Galaxy</a></li>
+                            <li><a href="Pluto.html" class="f">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#about">About</a></li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-right">
+                    <input onkeypress="return /[a-z]/i.test(event.key)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn btn-danger" onclick="search2()" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="im1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/1200px-Planets2013.svg.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/f7/66/88/f76688fb9a9920a1c0b8370f6a81790e.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/58/30/lunar-eclipse-phases-and-solar-eclipse-phases-vector-23645830.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpaperaccess.com/full/4147950.jpg" class="im1" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.wallpaperscraft.com/image/single/black_hole_time_space_stars_distortion_19957_2560x1080.jpg" class="im1" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <h1 id="heading">Satellites</h1>
+    <img src="https://media.wired.com/photos/5b52582f59269e342890a45a/1:1/w_1800,h_1800,c_limit/Satellite_FHM56J.jpg" width="400px" class="infor_img" alt="Satellite">
+    <p id="infor_par">
+        An object that orbits a planet is called satellites.
+        Satellites can be of 2 types depending upon the objects that are orbiting around the planet.
+        <br>
+        They are:
+    </p>
+    <ul id="infor_par">
+        <li>Natural Satellites</li>
+        <li>Artificial Satellites</li>
+    </ul>
+
+    <hr>
+    <h2 id="infor_title">Natural Satellites</h2>
+    <p id="infor_par">
+        A celestial object that revolves around a planet is called natural satellites.
+        Eg:- Moon revolving the planets, Planets revolving the Sun
+    </p>
+    <img src="https://www.refinery29.com/images/10640480.jpg" width="300px" class="infor_img" alt="Moon">
+
+    <hr>
+    <h2 id="infor_title">Artificial Satellites</h2>
+    <p id="infor_par">
+        A man made object that is placed in the orbit of a planet 
+        to revolve around it is called Artificial Satellite. 
+        These are launched into the space using rockets.
+        <br>
+        Artificial satellites are used for:
+    </p>
+    
+    <h3 id="infor_title">Navigation</h3>
+    <p id="infor_par">
+        Navigation Satellites are used to provide the accurate location of a place or something.
+        The Global Positioning System (GPS) is a satellite based navigational system which is made up of a network of 24 satellites.
+        It can be used to find out the exact location of a GPS receiver anywhere on the earth.
+    </p>
+
+    <h3 id="infor_title">Weather Satellites</h3>
+    <p id="infor_par">
+        Weather forecasting is done by studying the pictures taken by the weather satellites.
+        Satellite data help forecast the weather in two ways: expert forecasters interpret the images, and numerical weather-prediction models assimilate observations. 
+        Image analysis plays an important role in short-term forecasts, those that predict the weather in one to three hours into the future.
+        These satellites are also used to predict natural calamities such as Earthquakes,cyclones and floods.
+    </p>
+
+    <h3 id="infor_title">Communication Satellites</h2>
+    <p id="infor_par">
+        The purpose of communications satellites is to relay the signal around the curve of the Earth allowing communication between widely separated geographical points. 
+        Communications satellites use a wide range of radio and microwave frequencies.
+        Communications satellites are used for television, telephone, radio, internet, and military applications. 
+        There are about 2,000 communications satellites in Earth's orbit, used by both private and government organizations. …
+        Satellites communicate by using radio waves to send signals to the antennas on the Earth. 
+        The antennas then capture those signals and process the information coming from those signals. 
+        Where the satellite is currently located in space
+    </p>
+
+    <h3 id="infor_title">Other Uses</h3>
+    <ul id="infor_par">
+        <li>Artificial satellites are widely used to study the Earth and other planets.</li>
+        <li>To observe the astronomical bodes present quite far away from Earth</li>
+    </ul>
+
+    <p id="infor_par">
+        Some Satellites serve only one function while others are designed to perform multiple functions. 
+        Special equipments are used in a satellite to protect it from harmful radiations in space.
+    </p>
+    <hr>
+
+    <h3 id="infor_title">International Space Station (ISS)</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/International_Space_Station_after_undocking_of_STS-132.jpg/1200px-International_Space_Station_after_undocking_of_STS-132.jpg" class="infor_img" width="350px" alt="International Space Station (ISS)">
+    <p id="infor_par">
+        The International Space Station (ISS) is an artificial satellite present in the earth's orbit.
+        It is the third brightest object in the sky.
+        Several experiments are conducted in ISS as it is an ideal place to realise the zero gravity state.
+        Its main construction was in between 1998 and 2011.
+    </p>
+    <hr>
+
+    <h2 id="infor_title">Timeline</h2>
+    <table border="3px" style="border: 3px solid #ffffff; background-color: #fdc780;font-size: 20px; color: black;" width="100%">
+        <tr>
+            <th style="text-align: center; width: 5%;">Year</th>
+            <th style="text-align: center; width: 10%;">Date</th>
+            <th style="text-align: center; width: 12%;">Country</th>
+            <th style="text-align: center; width: 14%;">Satellite/Spacecraft Name</th>
+            <th style="text-align: center; width: 25%;">Scientific Inventions</th>
+            <th style="text-align: center; width: 25%;">Agency</th>
+            <th style="text-align: center; width: 19%;">Astronauts/Animals Carried</th>
+        </tr>
+        <tr>
+            <td>1957</td>
+            <td>October 4</td>
+            <td>Soviet Union (Russia)</td>
+            <td>Sputnik 1</td>
+            <td>First human-made object launched to orbit earth</td>
+            <td>DARPA (Defense Advanced Research Projects Agency)</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>1957</td>
+            <td>November 3</td>
+            <td>Soviet Union</td>
+            <td>Sputnik 2</td>
+            <td>First satellite launched to carry a living animal.</td>
+            <td>DARPA</td>
+            <td>Dog named Laika</td>
+        </tr>
+        <tr>
+            <td>1958</td>
+            <td>January 31</td>
+            <td>United States of America (USA)</td>
+            <td>Explorer 1</td>
+            <td>First satellite launched by USA.</td>
+            <td>ABMA (Army Ballistic Missile Agency)</td>
+            <td rowspan="3">None</td>
+        </tr>
+        <tr>
+            <td>1958</td>
+            <td>October 11</td>
+            <td>USA</td>
+            <td>Pioneer 1</td>
+            <td>First spacecraft launched by NASA.</td>
+            <td>NASA (National Aeronautics and Space Administration)</td>
+        </tr>
+        <tr>
+            <td>1960</td>
+            <td>August 12</td>
+            <td>USA</td>
+            <td>Echo 1</td>
+            <td>First rudimentary communications satellite launched.</td>
+            <td>NASA</td>
+        </tr>
+        <tr>
+            <td>1961</td>
+            <td>April 12</td>
+            <td>Soviet Union</td>
+            <td>Vostok 1</td>
+            <td>First human to go into space.</td>
+            <td>Roskosmos (Russian Federal Space Agency)</td>
+            <td>Yuri Gagarin</td>
+        </tr>
+        <tr>
+            <td>1962</td>
+            <td>August 27</td>
+            <td>USA</td>
+            <td>Mariner 2</td>
+            <td>First spacecraft to visit another planet (Venus).</td>
+            <td>NASA</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>1963</td>
+            <td>June 16</td>
+            <td>Soviet Union</td>
+            <td>Vostok 6</td>
+            <td>First woman to go into space.</td>
+            <td>Roskosmos</td>
+            <td>Valentina Tereshkova</td>
+        </tr>
+        <tr>
+            <td>1969</td>
+            <td>July 21</td>
+            <td>USA</td>
+            <td>Apollo 11</td>
+            <td>First spacecraft to land on the Moon.</td>
+            <td rowspan="5">NASA</td>
+            <td>Neil Armstrong, Buzz Aldrin and Michael Collins</td>
+        </tr>
+        <tr>
+            <td>1971</td>
+            <td>May 30</td>
+            <td>USA</td>
+            <td>Mariner 9</td>
+            <td>First spacecraft to visit Mars.</td>
+            <td rowspan="10">None</td>
+        </tr>
+        <tr>
+            <td>1972</td>
+            <td>March 2</td>
+            <td>USA</td>
+            <td>Pioneer 10</td>
+            <td>First spacecraft to visit Jupiter.</td>
+        </tr>
+        <tr>
+            <td>1973</td>
+            <td>April 6</td>
+            <td>USA</td>
+            <td>Pioneer 11</td>
+            <td>First spacecraft to visit Saturn.</td>
+        </tr>
+        <tr>
+            <td>1973</td>
+            <td>November 3</td>
+            <td>USA</td>
+            <td>Mariner 10</td>
+            <td>First spacecraft to visit Mercury.</td>
+        </tr>
+        <tr>
+            <td>1975</td>
+            <td>April 19</td>
+            <td>India</td>
+            <td>Aryabhata</td>
+            <td>India's first satellite launched.</td>
+            <td>ISRO (Indian Space Research Organisation)</td>
+        </tr>
+        <tr>
+            <td>1977</td>
+            <td>August 20</td>
+            <td>USA</td>
+            <td>Voyager 2</td>
+            <td>First spacecraft to visit Uranus and Neptune.</td>
+            <td>NASA</td>
+        </tr>
+        <tr>
+            <td>2008</td>
+            <td>October 22</td>
+            <td>India</td>
+            <td>Chandrayaan-1</td>
+            <td>India's first lunar mission.</td>
+            <td>ISRO</td>
+        </tr>
+        <tr>
+            <td>2009</td>
+            <td>July 29</td>
+            <td>United Arab Emirates (UAE)</td>
+            <td>DubaiSat-1</td>
+            <td>UAE's first satellite launched. (This is a Earth observation satellite.)</td>
+            <td>MBRSC (Mohammed Bin Rashid Space Center)</td>
+        </tr>
+        <tr>
+            <td>2013</td>
+            <td>November 5</td>
+            <td>India</td>
+            <td>Mars Orbiter Mission (MOM) or Mangalyaan-1</td>
+            <td>India's first Mars orbiter.</td>
+            <td>ISRO</td>
+        </tr>
+        <tr>
+            <td>2018</td>
+            <td>October 2018</td>
+            <td>UAE</td>
+            <td>KhalifaSat (DubaiSat-3)</td>
+            <td>UAE's first satellite launched in 2018. (This is a Earth observation satellite.)</td>
+            <td>MBRSC</td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <p id="infor_par" style="text-align: center;">
+        <a href="Planets.html">Planets</a>
+    </p>
+
+    <footer>&copy; 2021</footer>
+    <script src="../banner.js"></script>
+    <script>var heading = document.getElementById('heading'); heading.scrollIntoView();</script>
+</div>
+</body>
+</html>
